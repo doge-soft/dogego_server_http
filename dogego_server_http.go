@@ -6,6 +6,7 @@ import (
 	"os"
 )
 
+// HTTP/1.1 服务器
 func HTTPServerProtocol(router *gin.Engine) error {
 	err := http.ListenAndServe(os.Getenv("ADDR_HTTP"), router)
 
